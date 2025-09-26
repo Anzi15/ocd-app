@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -36,6 +36,10 @@ export default function AllAudioBooksPage() {
     return durations[Math.floor(Math.random() * durations.length)];
   };
 
+  useEffect(() => {
+     router.prefetch("/");
+  }, [router]);
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100">
       {/* Animated Background Elements */}
@@ -48,14 +52,16 @@ export default function AllAudioBooksPage() {
         {/* Enhanced Header */}
         <div className="text-center mb-12">
           <div className=" items-center justify-center mb-4">
+          <a href="/">
             <Button
               variant="ghost"
               onClick={handleBackToLibrary}
               className="mr-4 hover:bg-white/50 backdrop-blur-sm transition-all duration-300"
             >
               <ArrowLeft className="h-4 w-4 mr-2" />
-              Back to Library
+              Back to home
             </Button>
+          </a>
             <div className="flex justify-center">
               <Headphones className="h-8 w-8 text-blue-600 mr-3" />
               <h1 className="text-4xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
