@@ -11,9 +11,9 @@ declare global {
   }
 }
 
-const YOUTUBE_ID = "CjNRgEMrlrg";
+const YOUTUBE_ID = "OpqaA44G5e4";
 const THUMBNAIL_URL =
-  "https://img.youtube.com/vi/CjNRgEMrlrg/maxresdefault.jpg";
+  "https://img.youtube.com/vi/OpqaA44G5e4/maxresdefault.jpg";
 
 export default function YouTubeCustomPlayer() {
   const playerRef = useRef<any>(null);
