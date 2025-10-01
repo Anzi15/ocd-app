@@ -401,7 +401,7 @@ export default function HomePage() {
                 <div className="p-8">
                   <div className="text-center mb-6">
                     <h2 className="text-4xl font-bold bg-gradient-to-r from-gray-800 to-gray-600 bg-clip-text text-transparent mb-3 font-heading">
-                      The Ultimate OCD Management Technique
+                      The Ultimate OCD Management Techniques
                     </h2>
                     <div className="w-20 h-1 bg-gradient-to-r from-primary to-primary/60 rounded-full mx-auto mb-4"></div>
                     <p className="text-lg text-gray-600 leading-relaxed font-body max-w-2xl mx-auto">
